@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafechul</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Pedidos</h1>
+        <form>
+          <div class="cajaID">
+            <label for="productoID" class="form-label" hidden>ID</label>
+            <input type="number" class="form-control" id="productoID" placeholder="ID" hidden>
+            <!--Acá como ven le pongo hidden al id para que no se vea, ya que el usuario no lo escribe porque es AUTO-INCREMENT-->
+          </div>
+
+          <div class="cajaPrecio">
+            <label for="productoPrecio" class="form-label" hidden>Precio</label>
+            <input type="float" class="form-control" id="productoPrecio" placeholder="Precio" hidden>
+            <!--Acá como ven le pongo hidden al id para que no se vea, ya que el usuario no lo escribe porque es AUTO-INCREMENT-->
+          </div>
+
+          <label for="tipoCafeSelect">Tipos de Café:</label>
+          <select id="tipoCafeSelect" name="tipoCafe">
+          <option value="">Seleccione un tipo de café</option>
+          <!-- Las opciones se cargarán dinámicamente desde JavaScript -->
+          </select>
+
+          <div class="cajaTamanio">
+          <label for="tamanioSelect">Tamaño de su vaso:</label>
+          <select id="tamanioSelect" name="tamanio">
+          <option value="">Seleccione su tamaño</option>
+          <!-- Las opciones se cargarán dinámicamente desde JavaScript -->
+          </select>
+          </div>
+
+          <div class="cajaInventario">
+            <label for="productoInventario" class="form-label" hidden>Inventario</label>
+            <input type="text" class="form-control" id="productoInventario" placeholder="Inventario" hidden>
+            <!--Acá como ven le pongo hidden al id para que no se vea, ya que el usuario no lo escribe porque es AUTO-INCREMENT-->
+          </div>
+          
+          
+          
+
+
+          <br>
+            
+            <button type="submit" class="botonSave" id="productoSave">Ordenar</button>
+            <button type="submit" class="botonLista" id="productoLista">Ver productos</button>
+
+          </form>
+    </div>
+</body>
+
+<script src="./productos.js"></script>
+
+</html>
